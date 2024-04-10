@@ -15,3 +15,15 @@ _3. Снабдить репозиторий оформленным текстовым описанием решения (файл README.md
 
 _4. Написать программу, решающую поставленную задачу_
 
+array = { "abc", "defg", "hi", "jklm", "no" };
+
+newArray = array.Where(str => str.Length <= 3).ToArray();
+
+Console.WriteLine("Новый массив с строками, длина которых меньше или равна 3:");
+
+foreach (string str in newArray)
+
+        {
+        Console.WriteLine(str);
+        }
+
